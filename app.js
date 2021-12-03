@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/fruitDB")
+mongoose.connect("mongodb://localhost:27017/UserDB")
 
 const itemsSchema = new mongoose.Schema({
     name: String
