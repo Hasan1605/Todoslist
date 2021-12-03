@@ -12,9 +12,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://hasan_1605:Preechiansari1605@cluster0.cfjio.mongodb.net/hasan")
-
-
+mongoose.connect("mongodb://localhost:27017/fruitDB")
 
 const itemsSchema = new mongoose.Schema({
     name: String
